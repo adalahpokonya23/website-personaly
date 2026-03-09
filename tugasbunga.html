@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunga Anjani · multitalenta hub | profesional</title>
+  <!-- Fonts & Icons premium -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS scroll animation ringan -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fcf6f2;
+      font-family: 'Quicksand', sans-serif;
+      color: #2b2b2b;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* navbar premium */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2.5rem;
+      background: rgba(255, 248, 242, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(230, 180, 160, 0.3);
+      box-shadow: 0 8px 32px rgba(140, 80, 60, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(140deg, #a85538, #c3765c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+    .logo span {
+      font-size: 1rem;
+      font-weight: 500;
+      display: block;
+      font-family: 'Quicksand', sans-serif;
+      letter-spacing: 3px;
+      color: #a56954;
+      -webkit-text-fill-color: #a56954;
+      background: none;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #4d3c34;
+      transition: 0.2s;
+      font-size: 1.15rem;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      background: #c57358;
+      left: 0;
+      bottom: -8px;
+      border-radius: 6px;
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* hero section — lebih elegan */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 3rem 0 4rem;
+    }
+
+    .hero-left {
+  flex: 1 1 350px;
+  text-align: center;   /* membuat teks ke tengah */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* semua elemen di tengah */
+}
+
+    .hero-left h1 {
+      font-size: 3.8rem;
+      line-height: 1.1;
+      background: linear-gradient(145deg, #3e2c24, #a35f48);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .hero-left .multitalent-badge {
+      background: #ffede3;
+      padding: 0.7rem 2.2rem;
+      border-radius: 60px;
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border: 2px solid #d9aa98;
+      box-shadow: 0 8px 0 #bc8b78;
+      transition: 0.15s;
+      margin: 1.2rem 0 0.8rem;
+    }
+
+    .hero-left p {
+      font-size: 1.35rem;
+      color: #4e3f38;
+      max-width: 500px;
+      font-weight: 500;
+    }
+
+    .hero-right {
+      flex: 0 0 280px;
+      text-align: center;
+      font-size: 8rem;
+      color: #d6896e;
+      filter: drop-shadow(0 20px 20px #ecc7b8);
+      animation: subtle-float 5s infinite ease-in-out;
+    }
+
+    @keyframes subtle-float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-18px) rotate(2deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    /* FOTO PROFIL + BINGKAI LUCU */
+
+.foto-bingkai{
+display:block;
+margin:25px auto;
+width:180px;
+height:180px;
+object-fit:cover;
+
+border-radius:50%;
+
+border:6px solid #ffd9cc;
+padding:6px;
+background:white;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,0.15),
+0 0 0 6px #ffc6b3,
+0 0 0 12px #ffe4db;
+
+transition:0.3s;
+}
+
+.foto-bingkai:hover{
+transform:scale(1.05) rotate(2deg);
+}
+
+.multitalent-badge{
+background:#ffede3;
+padding:0.7rem 2rem;
+border-radius:60px;
+display:inline-block;
+font-size:1.2rem;
+font-weight:600;
+border:2px solid #d9aa98;
+margin-top:10px;
+}
+
+.hero-left p{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+.hero-right{
+font-size:6rem;
+color:#d6896e;
+}
+
+    /* about card — font diperbesar sesuai permintaan */
+    .about-card {
+      background: #ffffffd6;
+      backdrop-filter: blur(6px);
+      border-radius: 3.5rem;
+      padding: 3rem 3rem;
+      margin: 2rem 0 3rem;
+      border: 2px solid #ffded0;
+      box-shadow: 0 30px 40px -20px #ca9f8d;
+      transition: 0.3s;
+    }
+
+    .about-card:hover {
+      box-shadow: 0 40px 50px -15px #b57a64;
+    }
+
+    .about-card h2 {
+      font-size: 2.8rem;      /* lebih besar */
+      font-weight: 700;
+      border-left: 8px solid #c57358;
+      padding-left: 1.8rem;
+      margin-bottom: 2rem;
+      color: #3d2c25;
+    }
+
+    .about-card p {
+      font-size: 1.5rem;       /* DIPERBESAR dari sebelumnya */
+      line-height: 1.6;
+      font-weight: 450;
+      max-width: 85%;
+      color: #2f2622;
+      margin-bottom: 1rem;
+    }
+
+    /* dua kolom Jasa & Store */
+    .double-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin: 2.5rem 0 2rem;
+    }
+
+    .service-card, .store-card {
+      flex: 1 1 300px;
+      background: rgba(255, 244, 235, 0.8);
+      backdrop-filter: blur(6px);
+      border-radius: 3rem;
+      padding: 2.5rem 2.2rem;
+      border: 2px solid #fad2c0;
+      transition: 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);
+      box-shadow: 0 20px 30px -12px rgba(170, 100, 75, 0.25);
+    }
+
+    .service-card:hover, .store-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      border-color: #d9a28c;
+      box-shadow: 0 30px 40px -12px #bf836c;
+    }
+
+    .service-card i, .store-card i {
+      font-size: 3.2rem;
+      color: #b15f44;
+      margin-bottom: 1.4rem;
+    }
+
+    .service-card h2, .store-card h2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      border-bottom: 4px dotted #e6b7a5;
+      padding-bottom: 0.8rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .service-list, .store-list {
+      list-style: none;
+    }
+
+    .service-list li, .store-list li {
+      font-size: 1.3rem;      /* ukuran nyaman */
+      padding: 0.7rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 500;
+    }
+
+    .service-list li i, .store-list li i {
+      font-size: 1.6rem;
+      width: 36px;
+      color: #b46248;
+    }
+
+    /* food highlight lebih modern */
+    .menu-highlight {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem 2.5rem;
+      background: #ffede6;
+      padding: 2.5rem 2rem;
+      border-radius: 5rem 2rem 5rem 2rem;
+      margin: 3rem 0;
+      border: 2px solid #f0bcab;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 100px;
+      padding: 1rem 2.5rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #7e5341;
+      box-shadow: 0 8px 0 #b88772;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 0 #b88772;
+    }
+
+    /* payment row */
+    .payment-row-modern {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem 4rem;
+      background: #f6e3d9;
+      padding: 2rem 3rem;
+      border-radius: 120px;
+      width: fit-content;
+      margin: 2.5rem auto;
+      border: 2px solid #e4bbac;
+    }
+
+    .payment-item-modern {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #482f26;
+    }
+
+    .payment-item-modern i {
+      font-size: 2.5rem;
+      color: #b45f44;
+    }
+
+    /* contact section lebih eksklusif */
+    .contact-premium {
+      background: linear-gradient(130deg, #fff3eb, #ffede5);
+      border-radius: 5rem 5rem 2rem 2rem;
+      padding: 3.5rem 3rem;
+      margin: 3rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      border: 2px solid #ebccbf;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      background: white;
+      padding: 0.8rem 2rem 0.8rem 1.4rem;
+      border-radius: 80px;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 14px #eacbbb;
+    }
+
+    .contact-row i {
+      font-size: 2.2rem;
+      color: #b75c3e;
+      width: 44px;
+    }
+
+    .contact-row a, .contact-row span {
+      font-weight: 600;
+      text-decoration: none;
+      color: #3b2b24;
+    }
+
+    .social-wrap {
+      display: flex;
+      gap: 2.2rem;
+      font-size: 3rem;
+    }
+
+    .social-wrap a {
+      color: #a75f48;
+      transition: 0.2s;
+    }
+
+    .social-wrap a:hover {
+      transform: scale(1.2) rotate(5deg);
+      color: #bb4b2c;
+    }
+
+    /* footer premium */
+    .footer-modern {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-top: 4px dotted #eecfbf;
+      margin-top: 4rem;
+      background: #f7e2d6;
+      border-radius: 5rem 5rem 0 0;
+    }
+
+    .date-stamp-modern {
+      font-family: 'Space Grotesk', monospace;
+      background: #352b27;
+      color: #fad7c9;
+      padding: 0.6rem 2.5rem;
+      border-radius: 100px;
+      display: inline-block;
+      font-size: 1.3rem;
+      margin-bottom: 1.8rem;
+      border: 2px solid #d9937b;
+    }
+
+    .footer-name-modern {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(145deg, #aa624b, #c57b60);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    /* back to top */
+    .back-to-top {
+      position: fixed;
+      bottom: 2.2rem;
+      right: 2.2rem;
+      background: #ddb1a0;
+      padding: 1rem 1.6rem;
+      border-radius: 80px;
+      color: #2b1e1a;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 0 #9e6f5e;
+      transition: 0.1s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      z-index: 99;
+      border: 2px solid #fbe2d4;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 0 #9e6f5e;
+    }
+
+    /* floating subtle background */
+    .floating-orb {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: radial-gradient(circle at 10% 30%, #ffdbcc 0%, transparent 30%),
+                  radial-gradient(circle at 90% 70%, #fccbb9 0%, transparent 35%);
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: -1;
+      animation: orbShift 24s infinite alternate ease-in-out;
+    }
+
+    @keyframes orbShift {
+      0% { transform: scale(1) translate(0, 0); }
+      100% { transform: scale(1.2) translate(2%, 4%); }
+    }
+
+    /* responsif */
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        padding: 1.2rem;
+      }
+      .hero-left h1 {
+        font-size: 2.8rem;
+      }
+      .about-card p {
+        max-width: 100%;
+        font-size: 1.3rem;
+      }
+      .payment-row-modern {
+        border-radius: 50px;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+  <!-- AOS init -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="floating-orb"></div>
+
+  <!-- navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      FLOW <span>MY STORE</span>
+    </div>
+    <div class="nav-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#about">About</a>
+      <a href="#jasa-store">Layanan</a>
+      <a href="#contac">Kontak</a>
+      <a href="#"><i class="fas fa-search" style="color: #bb6b55;"></i></a>
+    </div>
+  </nav>
+
+  <!-- Hero dengan nama lengkap -->
+  <section id="beranda" class="hero container">
+    <div class="hero-left" data-aos="fade-right" data-aos-duration="700">
+      <h1>Bunga Anjani<br>Purnama Sari</h1>
+       <img class="foto-bingkai" id="profile-img" src="akuu.png.jpeg" alt="foto saya">
+       <div class="multitalent-badge">
+        <i class="fas fa-bolt"></i> MY STORE <i class="fas fa-bolt"></i>
+      </div>
+      <p><i class="fas fa-check-circle" style="color:#b5674b;"></i> siap bantu tugas, cetak, makanan sedap</p>
+    </div>
+    <div class="hero-right" data-aos="fade-left" data-aos-duration="800">
+      <i class="fas fa-gem"></i>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION — FONT DIPERBESAR -->
+  <section id="about" class="container">
+    <div class="about-card" data-aos="zoom-in-up" data-aos-duration="600">
+      <h2><i class="fas fa-star" style="color:#c77459; margin-right: 15px;"></i>About Me</h2>
+      <p>
+        Halo! saya <strong>Bunga Anjani</strong>, saya adalah seorang pelajar, saya tinggal di lampung
+        saya sangat suka sekali berjualan, maka dari itu saya menyediakan jasa 
+        serta barang barang kebutuhan anda. Jika anda berminat,bisa langsung hubungi saya via WhatsApp, 
+        Instagram, atau email. Privasi pelanggan selalu kami jaga, jangan ragu order di sini!
+      </p>
+      <p style="font-size: 1.4rem; margin-top: 1.2rem; font-weight: 500;">
+        <i class="fas fa-heart" style="color:#d47153;"></i> Kepercayaan anda adalah prioritas
+      </p>
+    </div>
+  </section>
+
+  <!-- JASA + STORE grid 2 kolom (sudah digabung jadi double-grid) -->
+  <section id="jasa-store" class="container">
+    <div class="double-grid">
+      <!-- Jasa card -->
+      <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+        <i class="fas fa-cogs"></i>
+        <h2>jasa</h2>
+        <ul class="service-list">
+          <li><i class="fas fa-file-alt"></i> pembuatan makalah</li>
+          <li><i class="fas fa-chart-line"></i> pembuatan laporan</li>
+          <li><i class="fas fa-print"></i> jasa print & fotocopy</li>
+          <li><i class="fas fa-video"></i> edit video / tugas</li>
+        </ul>
+      </div>
+      <!-- Store card -->
+      <div class="store-card" data-aos="flip-right" data-aos-delay="150">
+        <i class="fas fa-store"></i>
+        <h2>store</h2>
+        <ul class="store-list">
+          <li><i class="fas fa-box-open"></i> aneka barang (aksesoris, dll)</li>
+          <li><i class="fas fa-utensils"></i> mie nyemek spesial</li>
+          <li><i class="fas fa-cookie-bite"></i> jajanan & makanan ringan</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- menu highlight lebih hidup -->
+  <div class="container menu-highlight" data-aos="fade-up">
+    <span class="menu-item"><i class="fas fa-pepper-hot"></i> makanan</span>
+    <span class="menu-item"><i class="fas fa-candy-cane"></i> jasa</span>
+    <span class="menu-item"><i class="fas fa-mug-hot"></i> barang-barang</span>
+  </div>
+
+  <!-- metode pembayaran -->
+  <div class="container payment-row-modern" data-aos="fade-right">
+    <div class="payment-item-modern"><i class="fas fa-qrcode"></i> Dana / OVO</div>
+    <div class="payment-item-modern"><i class="fas fa-money-bill-wave"></i> Cash (bisa nego)</div>
+    <div class="payment-item-modern"><i class="fas fa-hand-holding-heart"></i> ShopeePay</div>
+  </div>
+
+  <!-- kontak section elegan dengan data valid -->
+  <section id="contac" class="container">
+    <div class="contact-premium" data-aos="zoom-in">
+      <div class="contact-details">
+        <div class="contact-row">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/6283894944315" target="_blank">+62 838-9494-4315 (chat)</a>
+        </div>
+        <div class="contact-row">
+          <i class="fab fa-instagram"></i>
+          <a href="https://instagram.com/Sheila_oneseven" target="_blank">@Sheila_oneseven</a>
+        </div>
+        <div class="contact-row">
+          <i class="fas fa-envelope"></i>
+          <span>bungaanjani260@gmail.com</span>
+        </div>
+      </diV>
+      <div class="social-wrap">
+        <a href="h<a href="httpsttps://wa.me/6283894944315" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="h<a href="htps://ittpstnstagram.com/Sheila_oneseven" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer profesional -->
+  <footer class="footer-modern">
+    <div class="date-stamp-modern">
+      <i class="fas fa-calendar-alt"></i> 2026 · always open
+    </div>
+    <div class="footer-name-modern">
+      ✦ Bunga Anjani Purnama Sari ✦
+    </div>
+    <p style="font-size: 1.4rem; font-weight: 400; margin: 0.8rem 0;">multitalenta — jasa, makanan, cetak, video</p>
+    <div style="font-size: 1.3rem; margin: 1.5rem 0;">
+      <i class="fas fa-dragon"></i> metode bayar: Dana, Cash, transfer <i class="fas fa-dragon"></i>
+    </div>
+    <p style="opacity: 0.7; font-size: 1.2rem;">© 2026 · sheila_oneseven · WA +62 838 9494 4315</p>
+  </footer>
+
+  <!-- back to top -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i> ke atas</a>
+
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: false, duration: 700, easing: 'ease-out-quad' });
+  </script>
+  <script>
+    // sedikit interaktivitas untuk back to top smooth
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
